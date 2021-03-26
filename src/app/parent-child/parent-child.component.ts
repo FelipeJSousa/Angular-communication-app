@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { TimerComponent } from './timer/timer.component';
 
 @Component({
@@ -9,13 +9,15 @@ import { TimerComponent } from './timer/timer.component';
 export class ParentChildComponent implements OnInit {
 
   @ViewChild(TimerComponent)
-  timer!: TimerComponent;
+  private timer!: TimerComponent;
+
+  @ViewChild("myp")
+  private myp!: ElementRef;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 
   start(){
     this.timer.start();
@@ -29,6 +31,9 @@ export class ParentChildComponent implements OnInit {
     this.timer.clear();
   }
 
+  ngAfterViewInit(){
+    console.log(this.myp)
+  }
 
 
 }
