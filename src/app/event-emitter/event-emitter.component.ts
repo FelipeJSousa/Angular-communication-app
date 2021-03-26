@@ -15,7 +15,8 @@ export class EventEmitterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  incBy(n:number){
-    this.value += n;
+  inc(event:any){
+    console.log(event)
+    this.value += event;
   }
 }

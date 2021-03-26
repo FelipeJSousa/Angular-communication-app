@@ -4,10 +4,7 @@
             <h3>{{ value }}</h3>
             <app-child-item 
                 [title]="title" 
-                (plusOne)="incBy(1)"
-                (plusTwo)="incBy(2)"
-                (negOne)="incBy(-1)"
-                (negTwo)="incBy(-2)"
+                (inc)="inc( $event )"
             ></app-child-item>
         </section>
     </mat-card-content>
