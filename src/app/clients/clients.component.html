@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-content>
+        <section>
+            <mat-form-field>
+                <input matInput placeholder="First name" [(ngModel)]="name" type="text">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Age" [(ngModel)]="age" type="number">
+            </mat-form-field>
+            <button mat-mini-fab color="warn" (click)="save()">
+                <mat-icon>check</mat-icon>
+            </button>
+        </section>
+    </mat-card-content>
+</mat-card>
+
+<mat-card>
+    <mat-card-title>Edit List</mat-card-title>
+    <app-item-client *ngFor="let c of clients; let i = index" [client]="c" (updateClient)="update($event, i)" (deleteClient)="delete(i)"></app-item-client>
+</mat-card>
+<mat-card>
+    <mat-card-title>List Clients</mat-card-title>
+    <h4 *ngFor="let c of clients">{{c.name}} - {{c.age}}</h4>
+</mat-card>
