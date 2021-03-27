@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class InterceptedItemComponent implements OnInit {
 
-  private _name!: string;
+  private _name: string = "";
 
   @Input()
   set name(name : string){
@@ -19,7 +19,8 @@ export class InterceptedItemComponent implements OnInit {
   }
 
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }
