@@ -21,6 +21,8 @@ import { ParentChildComponent } from './parent-child/parent-child.component';
 import { TimerComponent } from './parent-child/timer/timer.component';
 import { OnChangesComponent } from './on-changes/on-changes.component';
 import { NamesChangesComponent } from './on-changes/names-changes/names-changes.component';
+import { InterceptingComponent } from './intercepting/intercepting.component';
+import { NameComponent } from './Intercepting/name/name.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { NamesChangesComponent } from './on-changes/names-changes/names-changes.
     ParentChildComponent,
     TimerComponent,
     OnChangesComponent,
-    NamesChangesComponent
+    NamesChangesComponent,
+    InterceptingComponent,
+    NameComponent
   ],
   imports: [
     BrowserModule,
