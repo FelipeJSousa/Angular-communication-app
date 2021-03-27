@@ -22,7 +22,7 @@ import { TimerComponent } from './parent-child/timer/timer.component';
 import { OnChangesComponent } from './on-changes/on-changes.component';
 import { NamesChangesComponent } from './on-changes/names-changes/names-changes.component';
 import { InterceptingComponent } from './intercepting/intercepting.component';
-import { NameComponent } from './Intercepting/name/name.component';
+import { InterceptedItemComponent } from './intercepting/intercepted-item/intercepted-item.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,8 @@ import { NameComponent } from './Intercepting/name/name.component';
     OnChangesComponent,
     NamesChangesComponent,
     InterceptingComponent,
-    NameComponent
+    InterceptedItemComponent,
+    
   ],
   imports: [
     BrowserModule,

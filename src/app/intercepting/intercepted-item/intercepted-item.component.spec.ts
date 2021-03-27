@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NameComponent } from './name.component';
+import { InterceptedItemComponent } from './intercepted-item.component';
 
-describe('NameComponent', () => {
-  let component: NameComponent;
-  let fixture: ComponentFixture<NameComponent>;
+describe('InterceptedItemComponent', () => {
+  let component: InterceptedItemComponent;
+  let fixture: ComponentFixture<InterceptedItemComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NameComponent ]
+      declarations: [ InterceptedItemComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NameComponent);
+    fixture = TestBed.createComponent(InterceptedItemComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
